@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Imágenes/Flavicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="shortcut icon" href="../imagenes/flavicon.png" type="image/x-icon">
+    <!----------------------------------------BOOTSTRAP--------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Objetivos - InspirArte</title>
+
+
 </head>
 <body style="background-color: #5f6af8;">
-    <header>
-        <header class="contenido header">
-            <a href="../Index.html" class="logo">InspirArte.</a>
 
-        <div class="head">
-            <nav class="navbar">
-                <a href="../Index.html">Home</a>
-                <a href="../Pages/Objetivos.html">Objetivos</a>
-                <a href="../Pages/Contenidos.html">Contenidos</a>
-                <a href="../Pages/Inspírate.html">Inspírate</a>
-                <a href="../Pages/Contáctanos.html">Contáctanos</a>
+    <!------------------------------------------NAVBAR---------------------------------------------->
+        <header class="contenido header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">InspirArte.</a>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/objetivos.html">Objetivos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contenidos.html">Contenidos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/inspirate.html">Inspírate</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactanos.html">Contáctanos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class='bx bx-menu'></i>
+                </button>
             </nav>
-        </div>
-    </header>
+        </header>
 
 <!--agregar luego una breve introducción hacia los objetivos explicando quiénes somos-->
 
     <div class="container">
-        <div class="cards">
-        <i class='bx bx-brush'></i>
-        <div class="contenido">
-        <h3>Fomenta la creatividad</h3>
-        <p>Estimulando la creatividad de los alumnos, permitiéndoles explorar su lado artístico, experimentando con diferentes técnicas y expresando emociones de una manera única.
-        </p>
+      <div class="row">
+        <div class="colum">
+          <i class='bx bx-brush'></i>
+          <h3>Fomenta la creatividad</h3>
+          <p>Estimulando la creatividad de los alumnos, permitiéndoles explorar su lado artístico, experimentando con diferentes técnicas y expresando emociones de una manera única.
+          </p>
         </div>
+        <div class="colum">
+          <i class='bx bxs-heart'></i>
+          <h3>Promueve el bienestar emocional</h3>
+          <p>La práctica artística puede funcionar como una terapia creativa, permitiendo a las personas expresar y procesar sus emociones, reducir el estrés y mejorar el autoestima.
+          </p>
         </div>
-
-     <div class="cards">
-        <i class='bx bxs-heart'></i>
-        <div class="contenido">
-        <h3>Promueve el bienestar emocional</h3>
-        <p>La práctica artística puede funcionar como una terapia creativa, permitiendo a las personas expresar y procesar sus emociones, reducir el estrés y mejorar el autoestima.
-        </p>
+        <div class="colum">
+          <i class='bx bxs-palette'></i>
+          <h3>Desarrolla habilidades artísticas</h3>
+          <p>Mejorarás tu dominio de diferentes medios y técnicas de pintura, mejorarando la capacidad de observación y representación.
+          </p>  
         </div>
-        </div>
-
-    <div class="cards">
-        <i class='bx bxs-palette' ></i>
-        <div class="contenido">
-        <h3>Desarrolla habilidades artísticas</h3>
-        <p>Con la práctica constante y la instrucción especializada, los alumnos pueden mejorar su dominio de diferentes medios y técnicas de pintura, mejorar su capacidad de observación y representación. Permitiendo crecer como artistas.
-        </p>
-        </div>
-        </div>
-
+      </div>
     </div>
 
+<!-----------------------------FOOTER-------------------------------------->
     <footer>
         <div>
             <p>Copyright InspirArte©</p>
@@ -68,5 +83,7 @@
             <a href="#"><i class='bx bxl-youtube' ></i></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

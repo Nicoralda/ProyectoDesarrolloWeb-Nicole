@@ -8,15 +8,14 @@
     vertical-align: baseline;
 }
 
-/*Colocando el encabezado por encima de otros elementos con un índice z más bajo y utilizando un container flexible para organizar los elementos dentro del mismo*/
+/*--------------------------------------------NAVBAR-----------------------------------------------*/
 
 .header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 5%;
-    background: transparent;
+    padding: 40px 5%;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -26,7 +25,48 @@
     position: fixed
 }
 
-/*cuerpo*/
+.navbar {
+    background-color: #110341;
+    height: 70px;
+    margin: 8px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-nav {
+    justify-content: end;
+    flex-grow: 1;
+    
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    position: relative
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+
+/*-----------------------------------------------BODY------------------------------------------------*/
 
 .body {
     width: 100%;
@@ -37,22 +77,10 @@
     min-height: 100vh;
 }
 
-/*index*/
-
-.logo {
-    font-size: 30px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
+/*-----------------------------------------------INDEX--------------------------------------------------*/
 
 .social-media {
-    margin: 0 auto 0 50 px;
+    margin: 0 auto 0 50px;
 }
 
 .social-media a {
@@ -87,23 +115,12 @@
     color: #444;
 }
 
-.navbar a {
-    padding: 8px 15px;
-    font-size: 18px;
-    color: #444;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 10px;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 50px;
-}
 
-.slide {
+.slide-index {
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
-    background-image: url('../Imágenes/Portada ejemplo.jpg');
+    background-image: url('../imagenes/portada.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -144,9 +161,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* position: absolute;
-    bottom: 8%;
-    left: 10%; */
     color: #202020;
 }
 
@@ -163,12 +177,12 @@
 .content .btn {
     display: inline-block;
     padding: 13px 28px;
-    background: #d6d1e2;
-    border: 2px solid #6e5cad;
+    background: #ffffff;
+    border: 2px solid #150846;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     font-size: 16px;
-    color: #444;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
     transition: .5s;
@@ -198,88 +212,93 @@
     margin-top: 5px;
 }
 
-/*objetivos*/
+/*-----------------------------------------OBJETIVOS COLUMNAS----------------------------------------*/
 
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #75a9f9;
+.colum {
     padding: 20px;
+    text-align: center;
+    color: #fff;
 }
 
-.cards i {
+.colum i {
     font-size: 45px;
     color: white;
 }
 
-.cards .contenido {
-    padding: 20px;
-    text-align: center;
-    color: #fff;
+.colum:hover {
+    transition: .5s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    transform: translate(0%);
 }
 
-.contenido h3 {
-    font-size: 25px;
+.colum  h3 {
+    font-size: 25px bold;
     margin: 10px 0;
+    font-weight: 700;
 }
 
-.contenido p {
+.colum p {
     font-size: 20px;
 }
 
-/*cards contenidos pág 3*/
+/*---------------------------------------------CARDS CONTENIDOS PÁG 3----------------------------------------*/
 
-.container-contenidos {
-    width: 100%;
-    max-width: 1100px;
+.container-cards {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.cards-c {
+.card {
     width: 100%;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
-    background: #75a9f9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+    background: #b5bdeb;
     transition: all 400ms ease;
 }
 
-.cards-c:hover {
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
     transform: translate(-3%);
 }
 
-.cards-c img {
+.card-img-top {
     width: 100%;
-    height: 220px;
+    height: auto;
 }
 
-.cards-c .contenido-c {
-    padding: 15px;
-    text-align: center;
-    color: #fff;
-}
-
-.contenido-c h3 {
+.card-title {
     font-size: 25px;
     margin-bottom: 15px;
+    color: #0e0029;
+    font-weight: 700;
 }
 
-.contenido-c p {
-    font-size: 20px;
+.card-text {
+    color: #0e0029;
+    font-size: 16px;
+    line-height: 1.3;
 }
 
-/*galería de fotitos y videos*/
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #0e0029;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------GALERÍA INSPÍRATE PÁG 4--------------------------------------*/
 
 .content {
     width: 100%;
@@ -294,14 +313,14 @@
     margin-left: 50px;
 }
 
-.imágenes {
+/*.imágenes {
     padding: 16px;
     display: flex;
     justify-content: center;
     width: 290px;
     height: 300px;
     margin: auto;
-}
+}*/
 
 .videos {
     padding: 16px;
@@ -312,14 +331,16 @@
     margin: auto;
 }
 
-/*Formulario contáctanos*/
+/*----------------------------------------------FORMULARIO / PÁG 5--------------------------------------------*/
 
 .container-contacto {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    margin-top: 40px;
 }
 
 .principio {
@@ -327,16 +348,13 @@
 }
 
 .medio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 .container-contacto h2 {
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
+    font-weight: 700;
 }
 
 .container-contacto p {
@@ -352,23 +370,76 @@
 .container-contacto img {
     width: 251px;
     height: 296px;
+    border-radius: 12px;
+    margin-top: 30px;
 }
 
 .container-contacto iframe {
     width: 251px;
     height: 296px;
+    border-radius: 12px;
 }
 
-/*pie de página*/
+.container-contacto form label {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.container-contacto form .campo, textarea {
+    width: 100%;
+    padding: 10px 7px;
+    font-size: 16px;
+    border: 1px solid #0e0029;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: 0px;
+}
+
+.container-contacto form textarea {
+    max-width: 300px;
+    min-width: 350px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-contacto .btn-enviar {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #0e0029;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-contacto .btn-enviar:hover {
+    background: #75a9f9;
+}
+
+/*---------------------------------------------FOOTER---------------------------------------*/
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #75a9f9;
+    background-color: #110341;
     color: white;
 }
 
-/* main */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin-top: 10px;
+        /* Añade espacio entre los dos divs cuando están apilados */
+    }
+}
+
+/*--------------------------------------------MAIN-------------------------------------------*/
 
 .main {
     min-height: 100vh;
@@ -388,3 +459,5 @@ footer {
 .info p {
     width: 50%;
 }
+
+
