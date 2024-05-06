@@ -36,7 +36,6 @@
 .navbar-nav {
     justify-content: end;
     flex-grow: 1;
-    
 }
 
 .navbar-brand {
@@ -162,6 +161,13 @@
     flex-direction: column;
     text-align: center;
     color: #202020;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h3 {
@@ -300,35 +306,44 @@
 
 /*-----------------------------------------------GALERÍA INSPÍRATE PÁG 4--------------------------------------*/
 
-.content {
+.info {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.content p {
-    font-size: 20px;
-    color: #fff;
-    margin-left: 50px;
+.info p {
+    width: 50%;
 }
 
-/*.imágenes {
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    width: 290px;
-    height: 300px;
-    margin: auto;
-}*/
+.d-item {
+    height: 450px;
+}
 
-.videos {
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    width: 290px;
-    height: 300px;
-    margin: auto;
+#carouselExampleCaptions {
+    margin-bottom: 70px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-carrusel {
+    font-size: 30px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.texto-carrusel {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #000000;
 }
 
 /*----------------------------------------------FORMULARIO / PÁG 5--------------------------------------------*/
@@ -419,7 +434,7 @@
     background: #75a9f9;
 }
 
-/*---------------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------FOOTER-----------------------------------------------*/
 
 footer {
     text-align: center;
@@ -439,25 +454,5 @@ footer {
     }
 }
 
-/*--------------------------------------------MAIN-------------------------------------------*/
-
-.main {
-    min-height: 100vh;
-}
-
-.info {
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info p {
-    width: 50%;
-}
 
 
