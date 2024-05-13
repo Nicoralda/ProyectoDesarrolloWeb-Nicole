@@ -1,0 +1,56 @@
+/*--------------------------------------------NAVBAR-----ANIDADO------------------------------------------*/
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+    &.fixed-top {
+        position: fixed;
+    }
+}
+
+.navbar {
+    background-color: $back-color;
+    height: 70px;
+    margin: 8px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+    .navbar-nav {
+        justify-content: end;
+        flex-grow: 1;
+    }
+
+    .navbar-brand {
+        font-weight: 800;
+        color: $font-color;
+        font-size: 24px;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+        font-size: 30px;
+        color: $font-color;
+
+        &:focus {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+    }
+
+    .nav-link {
+        color: $font-color;
+        font-weight: 500;
+        position: relative;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}

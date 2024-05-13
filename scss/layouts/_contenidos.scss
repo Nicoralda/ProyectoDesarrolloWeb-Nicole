@@ -1,0 +1,113 @@
+/*---------------------------------------------INFO PÁG 3----------------------------------------*/
+
+.titulo-pag-3 {
+    color: $font-color;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------------PRIMERAS CARDS---ANIDADO-------------------------------------*/
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    .card {
+        width: 100%;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px $box-s-color;
+        background: $card-color;
+        transition: all 400ms ease;
+
+        &:hover {
+            box-shadow: 5px 5px 20px $box-s-color;
+            transform: translate(-3%);
+        }
+
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: $back-color;
+            font-weight: 700;
+        }
+
+        .card-text {
+            color: $back-color;
+            font-size: 16px;
+            line-height: 1.3;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: $back-color;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    color: $font-color;
+    cursor: pointer;
+}
+
+/*------------------------------------------------SEGUNDAS CARDS---ANIDADO---------------------------------*/
+
+.carta {
+    width: 23rem;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px $box-s-color;
+    background: $card-color;
+    transition: all 400ms ease;
+
+    .carta-body {
+        padding: 15px;
+        text-align: center;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 20px $box-s-color;
+        transform: translate(-3%);
+    }
+
+    .carta-img-top {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .carta-title {
+        font-size: 25px;
+        margin-bottom: 15px;
+        color: $back-color;
+        font-weight: 700;
+    }
+
+    .carta-text {
+        color: $back-color;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}

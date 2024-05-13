@@ -1,0 +1,28 @@
+/*-----------------------------------------OBJETIVOS COLUMNAS----ANIDADO------------------------------------*/
+
+.colum {
+    padding: 20px;
+    text-align: center;
+    color: $font-color;
+
+    i {
+        font-size: 45px;
+        color: $font-color;
+    }
+
+    &:hover {
+        transition: .5s;
+        box-shadow: 5px 5px 20px $box-s-color;
+        transform: translate(0%);
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

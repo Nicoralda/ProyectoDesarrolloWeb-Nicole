@@ -1,0 +1,41 @@
+/*-------------------------------------GALERÍA INSPÍRATE PÁG 4-------ANIDADO-------------------------------*/
+
+.info {
+    color: $font-color;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        width: 50%;
+    }
+}
+
+.d-item {
+    height: 450px;
+}
+
+#carouselExampleCaptions {
+    margin-bottom: 70px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-carrusel {
+    font-size: 30px;
+    font-weight: 800;
+    color: $font-color;
+}
+
+.texto-carrusel {
+    font-size: 25px;
+    font-weight: 700;
+    color: $font-color;
+}

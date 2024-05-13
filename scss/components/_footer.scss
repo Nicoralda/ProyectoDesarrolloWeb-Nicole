@@ -1,0 +1,19 @@
+/*--------------------------------------------------FOOTER------ANIDADO-----------------------------------------*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: $back-color;
+    color: $font-color;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin-top: 10px;
+        /* Añade espacio entre los dos divs cuando están apilados */
+    }
+}
