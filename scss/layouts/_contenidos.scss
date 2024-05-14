@@ -7,9 +7,7 @@
     font-size: 28px;
     font-weight: 700;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
 }
 
 /*-----------------------------------------PRIMERAS CARDS---ANIDADO-------------------------------------*/
