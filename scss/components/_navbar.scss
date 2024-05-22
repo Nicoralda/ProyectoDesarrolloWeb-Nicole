@@ -16,6 +16,8 @@
 }
 
 .navbar {
+    display: flex;
+    flex-wrap: nowrap;
     background-color: $back-color;
     height: 70px;
     margin: 8px;

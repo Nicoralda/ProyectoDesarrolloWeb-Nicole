@@ -14,6 +14,52 @@
     /* Añade espacio entre los dos divs cuando están apilados */
   }
 }
+@media (max-width: 1535px) {
+  .icons {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 1460px) {
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 1340px) {
+  .hero-img img {
+    width: 100%;
+    height: auto;
+  }
+  .hero-text h1 {
+    font-size: 75px;
+    margin: 0 0 30px;
+  }
+  .hero-text h5 {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1195px) {
+  section {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+  .hero-text {
+    padding-top: 115px;
+  }
+  .hero-img {
+    text-align: center;
+  }
+  .hero-img img {
+    width: 560px;
+    height: auto;
+  }
+  .hero {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
 /*--------------------------------------------NAVBAR-----ANIDADO------------------------------------------*/
 .header {
   position: sticky;
@@ -30,6 +76,8 @@
 }
 
 .navbar {
+  display: flex;
+  flex-wrap: nowrap;
   background-color: #110341;
   height: 70px;
   margin: 8px;
@@ -71,11 +119,6 @@ footer {
   color: white;
 }
 
-/*------------------------------------------------INDEX----ANIDADO--------------------------------------------*/
-html, body {
-  height: 100%;
-}
-
 .social-media {
   margin: 0 auto 0 50px;
 }
@@ -104,38 +147,95 @@ html, body {
   color: black;
 }
 
-.header-content {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
+/*--------------------------------------------CONTENIDO INDEX----ANIDADO--------------------------------------------*/
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  text-align: center;
-}
-.header-content h1 {
-  font-size: 75px;
-  color: white;
-  margin-bottom: 50px;
-}
-.header-content p {
-  font-size: 20px;
-  color: white;
-  width: 50%;
+  gap: 2rem;
 }
 
-.btn-1 {
-  margin-top: 50px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 11px 35px;
-  background-color: #110341;
-  color: white;
-  font-weight: 700;
-  border: 2px solid #110341;
-  border-radius: 50px;
-  transition: ease 0.5s;
+section {
+  padding: 0 19%;
 }
-.btn-1:hover {
-  background-color: #b5bdeb;
+
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+.hero-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.hero-text h1 {
+  font-size: 90px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 45px;
+}
+.hero-text p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+.hero-text a {
+  display: inline-block;
+  color: white;
+  background: #60e76e;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.hero-text:hover a {
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.hero-img {
+  width: 500px;
+  height: auto;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+}
+.icons a {
+  text-decoration: none;
+}
+.icons a:hover a {
+  background: white;
+}
+.icons a i {
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+.icons a:hover i {
+  color: #110341;
+  transform: translateY(-5px);
 }
 
 /*-----------------------------------------OBJETIVOS COLUMNAS----ANIDADO------------------------------------*/
