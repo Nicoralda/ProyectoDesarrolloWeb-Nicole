@@ -1,102 +1,98 @@
 /*--------------------------------------------CONTENIDO INDEX----ANIDADO--------------------------------------------*/
 
-.hero {
-    height: 100%;
-    width: 100%;
+body {
+    background-image: linear-gradient(to right, $back-color, $back-g-color);
+}
+
+.container {
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    display: flex;
+}
+
+.container__left {
+    flex: 1;
+    background-image: url("../imagenes/fondo.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left__content {
+    margin: 5rem 3rem 0 auto;
+    padding: 1rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+.left__content h4 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $font-color;
+}
+
+.left__content p {
+    color: $font-color;
+    font-weight: 500;
+}
+
+.container__right {
+    flex: 1.5;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
 }
 
-section {
-    padding: 0 19%;
+.right__content {
+    text-align: center;
+    max-width: 600px;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    padding: 2rem;
 }
 
-.hero-text {
-    h5 {
-        font-size: 14px;
-        font-weight: 400;
-        color: white;
-        margin-bottom: 40px;
-    }
-
-    h4 {
-        font-size: 18px;
-        font-weight: 600;
-        color: white;
-        margin-bottom: 10px;
-    }
-
-    h1 {
-        font-size: 90px;
-        line-height: 1;
-        color: white;
-        margin: 0 0 45px;
-    }
-
-    p {
-        color: white;
-        font-size: 15px;
-        line-height: 1.9;
-        margin-bottom: 40px;
-    }
-
-    a {
-        display: inline-block;
-        color: white;
-        background: #60e76e;
-        border: 1px solid transparent;
-        padding: 12px 30px;
-        line-height: 1.4;
-        font-size: 14px;
-        font-weight: 500;
-        border-radius: 50px;
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: all 0.5s ease;
-    }
-
-    &:hover a {
-        background: transparent;
-        border: 1px solid white;
-        transform: translateX(8px);
-    }
+.right__content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    color: $font-color;
 }
 
-.hero-img {
-    width: 500px;
-    height: auto;
+.right__content h4 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $font-color;
 }
 
-.icons {
-    position: absolute;
-    top: 50%;
-    padding: 0 9%;
-    transform: translateY(-50%);
-
-    a {
-        text-decoration: none;
-
-        &:hover a {
-            background: $font-color;
-        }
-
-        i {
-            display: block;
-            margin: 26px 0;
-            font-size: 24px;
-            color: $font-color;
-            font-size: 30px;
-            transition: all 0.5s ease;
-        }
-
-        &:hover i {
-            color: $back-color;
-            transform: translateY(-5px);
-        }
-    }
+.right__content p {
+    margin-bottom: 3rem;
+    color: $font-color;
 }
+
+.btn {
+    margin-bottom: 3rem;
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    text-decoration: none;
+    border: 1px solid $card-color;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.primary__btn {
+    margin-right: 1rem;
+    color: $font-color;
+    background-color: #110341;
+}
+
+.secondary__btn {
+    color: $font-color;
+    background-color: transparent;
+}
+
+
+
+
+
+

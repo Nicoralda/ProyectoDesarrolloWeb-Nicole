@@ -1,58 +1,60 @@
 /*--------------------------------------------NAVBAR-----ANIDADO------------------------------------------*/
-
-.header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 5%;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-
-    &.fixed-top {
-        position: fixed;
-    }
-}
-
 .navbar {
-    display: flex;
-    flex-wrap: nowrap;
     background-color: $back-color;
     height: 70px;
     margin: 8px;
     border-radius: 16px;
     padding: 0.5rem;
+}
 
-    .navbar-nav {
-        justify-content: end;
-        flex-grow: 1;
-    }
+.navbar-nav {
+    background-color: $back-color;
+}
 
-    .navbar-brand {
-        font-weight: 800;
-        color: $font-color;
-        font-size: 24px;
-    }
+.navbar-brand {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 24px;
+    transition: 0.3s color;
+}
 
-    .navbar-toggler {
-        border: none !important;
-        font-size: 30px;
-        color: $font-color;
+.navbar-toggler {
+    border: none !important;
+    font-size: 30px;
+    color: $font-color;
+}
 
-        &:focus {
-            box-shadow: none !important;
-            outline: none !important;
-        }
-    }
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
 
-    .nav-link {
-        color: $font-color;
-        font-weight: 500;
-        position: relative;
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
 
-        &:hover {
-            color: $hover-color;
-        }
-    }
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.offcanvas-header {
+    background-color: $back-color
+}
+
+#offcanvasNavbarLabel {
+    color: #ffffff;
+}
+.offcanvas-body {
+    background-color: $back-g-color;
 }
