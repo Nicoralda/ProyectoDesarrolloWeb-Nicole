@@ -28,12 +28,6 @@
   }
 }
 @media (width < 780px) {
-  nav {
-    justify-content: center;
-  }
-  .nav__links {
-    gap: 1rem;
-  }
   .container {
     flex-direction: column;
   }
@@ -50,7 +44,7 @@
   }
   .right__content {
     text-align: center;
-    margin: 8rem auto;
+    margin: 8rem 0;
   }
 }
 @media (max-width: 768px) {
@@ -59,7 +53,6 @@
   }
   .social-media {
     margin-top: 10px;
-    /* Añade espacio entre los dos divs cuando están apilados */
   }
 }
 /*--------------------------------------------NAVBAR-----ANIDADO------------------------------------------*/
